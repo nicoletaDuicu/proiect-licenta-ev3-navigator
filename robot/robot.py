@@ -81,13 +81,7 @@ def trapmf(x, a, b, c, d):
     return (d-x)/(d-c) if d != c else 1.0
 
 def fuzzify_line(norm_l, norm_r):
-    """
-    norm = -1.0 (negru) ... +1.0 (alb)
-    Ambii ALB   → linia intre senzori → drept
-    Stang NEGRU → deviat stanga       → corecteaza dreapta (+)
-    Drept NEGRU → deviat dreapta      → corecteaza stanga  (-)
-    Ambii NEGRU → intersectie         → drept (oprit separat)
-    """
+   
     l_negru = trapmf(norm_l, -1.0, -1.0, -0.4, 0.0)
     l_alb   = trapmf(norm_l,  0.0,  0.4,  1.0, 1.0)
     r_negru = trapmf(norm_r, -1.0, -1.0, -0.4, 0.0)
