@@ -244,7 +244,6 @@ def turn_by_angle(diff_deg):
     return True
 
 def turn_using_camera(node_to):
-    """Asteapta unghiul de la camera si vireaza."""
     print("[TURN] Astept unghi de la camera pentru {}...".format(node_to))
 
     timeout = time.time() + TURN_ANGLE_TIMEOUT
