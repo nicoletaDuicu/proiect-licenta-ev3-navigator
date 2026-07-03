@@ -1,0 +1,17 @@
+# Ignore frontend dependencies
+frontend/node_modules/
+frontend/dist/
+
+# Ignore python virtual environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Ignore logs or local data
+robot/fuzzy_log_csv
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
